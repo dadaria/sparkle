@@ -85,12 +85,14 @@ img[alt="axes icon"] {
 .services {
     background-color: #f4f4f4;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .services p {
     max-width: 754px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 3%;
 }
 
 .row {
@@ -141,6 +143,20 @@ img[alt="graph"] {
 
 .row {
     margin-top: 3%;
+}
+
+.statistics {
+    background-color: #000;
+    margin-top: -1.7%;
+}
+
+.statistics .col-md-3{
+    background-color: #ffffff;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding: 1% 0 0 1%;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 
 
