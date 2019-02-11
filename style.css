@@ -30,21 +30,24 @@ h1 {
     font-weight: 400;
 }
 
-.header-text a {
+.header-text a,
+.like-button a {
     font-family: Raleway;
     color: #1b1b1b;
     font-size: 10px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     letter-spacing: 2px;
     background-color: #ffe500;
     padding: 15px 34px;
     border-radius: 0px;
+    border: 1px solid #ffe500;
 }
 
-.header-text a:hover {
+.header-text a:hover,
+.like-button a:hover {
     color: #ffe500;
     background-color: #000;
+    border: 1px solid #ffe500;
 }
 
 .bg-dark {
@@ -82,15 +85,20 @@ img[alt="axes icon"] {
     margin-bottom: 5%;
 }
 
-.services,
-.portfolio {
+.services {
     background-color: #f4f4f4;
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
+.portfolio {
+    background-color: #fff;
+    padding-top: 5%;
+}
+
 .services p,
-.portfolio p {
+.portfolio p,
+.team p {
     max-width: 754px;
     margin: 0 auto;
     text-align: center;
@@ -128,6 +136,10 @@ img[alt="axes icon"] {
     margin-left: -25px;
     margin-right: -25px;
     padding: 5% 3% 3%;
+}
+
+col-sm-6 col-md-3 p {
+    margin: 1px;
 }
 
 img[alt="graph"] {
@@ -185,35 +197,67 @@ img[alt="graph"] {
 .examples .col-md-2 {
     height: 350px;
     background-color: #707070;
-    position: relative;
 }
 
 .examples .col-md-2:nth-child(odd) {
     background-color: #ffe500;
 }
 
-.image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
-
-.examples .col-md-2 a:hover image {
-    opacity: 0.3;
+.video-banner {
+    height: 380px;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.video-banner a {
+    margin: 0 auto;
+    display: block;
+    width: 369px;
+    height: 77px;
+    border: 1px solid #ffe500;
+    background-color: #131313;
+    border-radius: 0;
+    padding-top: 23px;
+    color: #ffe600;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.like-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 210px;
+}
+
+.like-button a {
+    width: 230px;
+    margin: 0 auto;
+    display: block;
+}
+
+.video-banner a:hover {
+    background-color: #ffe600;
+    color: #131313;
+    border: 1px solid #ffe600;
+}
+
+.team {
+    padding-top: 5%;
+}
+
+.team .card img {
+    height: 80%;
+}
+
+.team .card-title {
+    background-color: #d2bd01;
+    padding: 10px;
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -243,6 +287,17 @@ img[alt="graph"] {
             border-top: none;
         }
 
-        .portfolio .examples {
+        .video-banner a {
+            width: 70%;
+        }
 
+        .statistics .col-md-3 {
+            width: 80%;
+            margin: 2% auto;
+        }
+
+        .services p,
+        .portfolio p,
+        .team p {
+            max-width: 90%;
         }
