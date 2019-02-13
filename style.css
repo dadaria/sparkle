@@ -1,6 +1,11 @@
-body {
+html, body {
     font-family: 'Raleway', sans-serif;
     width: 100%;
+    height: 100%;
+}
+
+.contain {
+    min-width: 100%;
 }
 
 header {
@@ -247,6 +252,7 @@ img[alt="graph"] {
 
 .team {
     padding-top: 5%;
+    margin-bottom: 20%;
 }
 
 .team .card img {
@@ -258,6 +264,43 @@ img[alt="graph"] {
     padding: 10px;
 }
 
+.black-text-box-left, .black-text-box-right {
+    max-width: 570px;
+    background-color: #1a1a1a;
+    margin: 6% 20%;
+    position: relative;
+}
+
+.black-text-box-left p, .black-text-box-right p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 3%;
+    text-align: left;
+}
+
+.black-text-box-right {
+    float: right;
+    margin-top: -2%;
+}
+
+.yellow-separator {
+    width: 100%;
+    height: 210px;
+    background-color: #ffe500;
+    position: absolute;
+    margin-top: 8%;
+}
+
+footer {
+    background-color: #1a1a1a;
+    height: 200px;
+}
+
+.clr {
+    height: 200px;
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -271,6 +314,10 @@ img[alt="graph"] {
         margin-bottom: 2%;
         margin-left: 2%;
         margin-right: 2%;
+    }
+
+    .team .col-md-3 {
+        min-width: 35%;
     }
 
     @media screen and (max-width: 768px) {
@@ -291,6 +338,10 @@ img[alt="graph"] {
             width: 70%;
         }
 
+        .black-text-box-left, .black-text-box-right {
+            max-height: 20%;
+        }
+
         .statistics .col-md-3 {
             width: 80%;
             margin: 2% auto;
@@ -300,4 +351,8 @@ img[alt="graph"] {
         .portfolio p,
         .team p {
             max-width: 90%;
+        }
+
+        .col-md-3 {
+            margin-left: 5%;
         }
