@@ -199,10 +199,46 @@ img[alt="graph"] {
 .examples .col-md-2 {
     height: 350px;
     background-color: #707070;
+    position: relative;
 }
 
 .examples .col-md-2:nth-child(odd) {
     background-color: #ffe500;
+}
+
+.overlay {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 10%;
+    right: 10%;
+    background: #fff;
+    opacity: 0;
+    padding: 0;
+    height: 50%;
+    width: 80%;
+}
+
+.overlay:first-child {
+    left: 12%;
+}
+
+.overlay h5 {
+    color: #1b1b1b;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+.overlay p {
+    color: #707070;
+    font-size: 12px;
+    font-weight: 400;
+    max-width: 90%;
+}
+
+.examples .col-md-2:hover .overlay {
+    opacity: 1;
 }
 
 .video-banner {
@@ -222,7 +258,7 @@ img[alt="graph"] {
     background-color: #131313;
     border-radius: 0;
     padding-top: 23px;
-    color: #ffe600;
+    color: #ffe500;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 3px;
@@ -242,9 +278,9 @@ img[alt="graph"] {
 }
 
 .video-banner a:hover {
-    background-color: #ffe600;
+    background-color: #ffe500;
     color: #131313;
-    border: 1px solid #ffe600;
+    border: 1px solid #ffe500;
 }
 
 .team {
@@ -334,6 +370,13 @@ footer .email {
     display: block;
     text-align: center;
     margin-bottom: 7%;
+    text-decoration: none;
+}
+
+footer .email:hover {
+    background-color: #1a1a1a;
+    color: #ffe500;
+    border: 1px solid #ffe500;
 }
 
 footer .social-networks img {
